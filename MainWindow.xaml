@@ -13,7 +13,7 @@
             <RowDefinition Height ="*"></RowDefinition>
             <RowDefinition Height ="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Button Height="100" Width="200" Grid.Row="0" >Русановская</Button>
-        <Button Height="100" Width="200" Grid.Row="1">Каркина</Button>
+        <Button Height="85" Width="150" Grid.Row="0" >Русановская</Button>
+        <Button Height="85" Width="150" Grid.Row="1">Каркина</Button>
     </Grid>
 </Window>
