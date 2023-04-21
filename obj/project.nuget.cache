@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Jd5er+yj9CDP2/ooQ2DQIDUDxwbBddWFeSngor8cK5EZVAP06IOLrYw1hJhcQs1FjpX1ND/SaiOOuD1YhbTdww==",
+  "dgSpecHash": "7CI/K46HU08n0n4oj/8dfyuUJBfPOXh8mcE2ROl6Ifk6GtmoIHLTbJFYcR+WUPv3XDZXhYjA5/0oNXXSDks5Vw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bottom\\Desktop\\ТехнПрогр\\gitt\\gitt.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Bottom\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.4\\microsoft.netcore.platforms.3.1.4.nupkg.sha512",
+    "C:\\Users\\Bottom\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Bottom\\.nuget\\packages\\scottplot\\4.1.63\\scottplot.4.1.63.nupkg.sha512",
+    "C:\\Users\\Bottom\\.nuget\\packages\\scottplot.wpf\\4.1.63\\scottplot.wpf.4.1.63.nupkg.sha512",
+    "C:\\Users\\Bottom\\.nuget\\packages\\system.drawing.common\\4.7.2\\system.drawing.common.4.7.2.nupkg.sha512",
+    "C:\\Users\\Bottom\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

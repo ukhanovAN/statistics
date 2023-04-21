@@ -24,5 +24,11 @@ namespace gitt
         {
             InitializeComponent();
         }
+
+        private void button_Rusanovskaya_Click(object sender, RoutedEventArgs e)
+        {
+            Rusanovskaya rusanovskaya = new Rusanovskaya();
+            rusanovskaya.Show();
+        }
     }
 }
