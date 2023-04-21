@@ -19,3 +19,12 @@ C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\refint\
 C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\gitt.pdb
 C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\gitt.genruntimeconfig.cache
 C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\ref\gitt.dll
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\bin\Debug\net6.0-windows\ScottPlot.dll
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\bin\Debug\net6.0-windows\ScottPlot.WPF.dll
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\Karkina.g.cs
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\Rusanovskaya.g.cs
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\Uhanova.g.cs
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\Karkina.baml
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\Rusanovskaya.baml
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\Uhanova.baml
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\gitt.csproj.CopyComplete
