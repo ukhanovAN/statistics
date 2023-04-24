@@ -28,3 +28,6 @@ C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\Karkina
 C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\Rusanovskaya.baml
 C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\Uhanova.baml
 C:\Users\Bottom\Desktop\ТехнПрогр\gitt\obj\Debug\net6.0-windows\gitt.csproj.CopyComplete
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\bin\Debug\net6.0-windows\Aspose.Cells.dll
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\Bottom\Desktop\ТехнПрогр\gitt\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

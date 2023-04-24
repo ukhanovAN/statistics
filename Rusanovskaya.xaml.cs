@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScottPlot;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,40 @@ namespace gitt
         public Rusanovskaya()
         {
             InitializeComponent();
+            ClassOfSourceCourse classOfSourceCourse = new ClassOfSourceCourse();
+            List <ClassOfSourceCourse> list = new List<ClassOfSourceCourse>();
+            list = classOfSourceCourse.FillList();
+            dataGrid_Table.ItemsSource = list;
+            dataGrid_Table.IsEnabled = false;
+
+        }
+        private void buttton_One_Click(object sender, RoutedEventArgs e)
+        {
+
+            WpfPlot1.Plot.Clear();
+            DataCourse course = new DataCourse();
+            course.CoutOne();
+            double[] x = course.dateTimes.Select(x => x.ToOADate()).ToArray();
+            WpfPlot1.Plot.AddScatter(x, course.courseOne);
+            WpfPlot1.Plot.XAxis.DateTimeFormat(true);
+            WpfPlot1.Refresh();
+            textBlock_one.Text = course.NameOne + "\n";
+            textBlock_one.Text += course.CoutMaxDiffOne();
+        }
+
+        private void buttton_Two_Click(object sender, RoutedEventArgs e)
+        {
+
+            DataCourse course = new DataCourse();
+            course.CoutTwo();
+            WpfPlot1.Plot.Clear();
+
+            double[] x = course.dateTimes.Select(x => x.ToOADate()).ToArray();
+            WpfPlot1.Plot.AddScatter(x, course.courseTwo);
+            WpfPlot1.Plot.XAxis.DateTimeFormat(true);
+            WpfPlot1.Refresh();
+            textBlock_two.Text = course.NameTwo + "\n";
+            textBlock_two.Text += course.CoutMaxDiffTwo();
         }
     }
-}
+    }
