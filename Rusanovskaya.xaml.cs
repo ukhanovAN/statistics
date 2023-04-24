@@ -34,6 +34,8 @@ namespace gitt
             WpfPlot1.Plot.AddScatter(x, course.courseOne);
             WpfPlot1.Plot.XAxis.DateTimeFormat(true);
             WpfPlot1.Refresh();
+
+            textBlock_date.Text = course.CoutMaxDiffOne();
         }
 
         private void buttton_Two_Click(object sender, RoutedEventArgs e)
@@ -46,6 +48,7 @@ namespace gitt
             WpfPlot1.Plot.AddScatter(x, course.courseTwo);
             WpfPlot1.Plot.XAxis.DateTimeFormat(true);
             WpfPlot1.Refresh();
+            textBlock_price.Text = course.CoutMaxDiffTwo();
         }
     }
     }

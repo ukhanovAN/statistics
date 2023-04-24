@@ -70,7 +70,7 @@ namespace gitt
 
         public string CoutMaxDiffOne()
         {
-            double maxDiff = courseOne[0];
+            double maxDiff = courseOne[0] - courseOne[1];
             DateTime dateMaxDiff = dateTimes[0];
             for (int i = 0; i < dateTimes.Length-1; i++)
             {
@@ -82,13 +82,13 @@ namespace gitt
             }
 
             if (maxDiff > 0 )
-                return "Валюта максимально потеряла " + maxDiff + " за " + dateMaxDiff;
+                return "Валюта максимально потеряла " + Math.Round(maxDiff, 5) + " за " + dateMaxDiff.ToShortDateString();
             else
-                return "Валюта максимально прибавила " + maxDiff + " за " + dateMaxDiff;
+                return "Валюта максимально прибавила " + Math.Round(maxDiff, 5) + " за " + dateMaxDiff.ToShortDateString();
         }
         public string CoutMaxDiffTwo()
         {
-            double maxDiff = courseTwo[0];
+            double maxDiff = courseTwo[0] - courseTwo[1];
             DateTime dateMaxDiff = dateTimes[0];
             for (int i = 0; i < dateTimes.Length - 1; i++)
             {
@@ -100,9 +100,9 @@ namespace gitt
             }
 
             if (maxDiff > 0)
-                return "Валюта максимально потеряла " + maxDiff + " за " + dateMaxDiff;
+                return "Валюта максимально потеряла " + Math.Round(maxDiff, 5) + " за " + dateMaxDiff.ToShortDateString();
             else
-                return "Валюта максимально прибавила " + maxDiff + " за " + dateMaxDiff;
+                return "Валюта максимально прибавила " + Math.Round(maxDiff, 5) + " за " + dateMaxDiff.ToShortDateString();
         }
     }
 }
