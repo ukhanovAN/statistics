@@ -67,5 +67,42 @@ namespace gitt
             }
             NameTwo = worksheet.Cells[1, 3].StringValue;
         }
+
+        public string CoutMaxDiffOne()
+        {
+            double maxDiff = courseOne[0];
+            DateTime dateMaxDiff = dateTimes[0];
+            for (int i = 0; i < dateTimes.Length-1; i++)
+            {
+                if (courseOne[i] - courseOne[i+1] > maxDiff)
+                {
+                    maxDiff = courseOne[i] - courseOne[i + 1];
+                    dateMaxDiff = dateTimes[i];
+                }
+            }
+
+            if (maxDiff > 0 )
+                return "Валюта максимально потеряла " + maxDiff + " за " + dateMaxDiff;
+            else
+                return "Валюта максимально прибавила " + maxDiff + " за " + dateMaxDiff;
+        }
+        public string CoutMaxDiffTwo()
+        {
+            double maxDiff = courseTwo[0];
+            DateTime dateMaxDiff = dateTimes[0];
+            for (int i = 0; i < dateTimes.Length - 1; i++)
+            {
+                if (courseTwo[i] - courseTwo[i + 1] > maxDiff)
+                {
+                    maxDiff = courseTwo[i] - courseTwo[i + 1];
+                    dateMaxDiff = dateTimes[i];
+                }
+            }
+
+            if (maxDiff > 0)
+                return "Валюта максимально потеряла " + maxDiff + " за " + dateMaxDiff;
+            else
+                return "Валюта максимально прибавила " + maxDiff + " за " + dateMaxDiff;
+        }
     }
 }
