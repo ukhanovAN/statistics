@@ -54,7 +54,7 @@ namespace gitt {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/gitt;V1.0.0.0;component/uhanova.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/gitt;component/uhanova.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Uhanova.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

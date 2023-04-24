@@ -12,15 +12,15 @@ namespace gitt
         public string NameOne { get; set; }
         public string NameTwo { get; set; }
 
+        public  double []  courseOne = new double[22];
+        public double[] courseTwo = new double[22];
+        public double[] datesChisla = new double[22];
+        public DateTime [] dateTimes = new DateTime[22];
 
-        List <double > courseOne = new List <double> ();
-        List<double> courseTwo = new List<double>();
-        List<DateTime> dateTimes = new List<DateTime> ();
-
-        public void ListsData()
+        public void CoutOne()
         {
             // Загрузить файл Excel
-            Workbook wb = new Workbook("Source//курс.xlsx");
+            Workbook wb = new Workbook("Source\\course.xlsx");
 
             // Получить все рабочие листы
             WorksheetCollection collection = wb.Worksheets;
@@ -36,23 +36,36 @@ namespace gitt
             // Цикл по строкам
             for (int i = 0; i < rows; i++)
             {
-                courseOne.Add(worksheet.Cells[i, 2].DoubleValue);
-                dateTimes.Add(worksheet.Cells[i, 1].DateTimeValue);
+                courseOne[i] = worksheet.Cells[i + 1, 2].DoubleValue;
+                datesChisla[i] = worksheet.Cells[i + 1, 0].DoubleValue;
+                dateTimes[i] = worksheet.Cells[i + 1, 1].DateTimeValue;
             }
+        }
+        public void CoutTwo()
+        {
+            // Загрузить файл Excel
+            Workbook wb = new Workbook("Source\\course.xlsx");
+
+            // Получить все рабочие листы
+            WorksheetCollection collection = wb.Worksheets;
             // Индекс рабочего листа
-            worksheetIndex ++;
-            worksheet = collection[worksheetIndex];
+            int worksheetIndex = 1;
+            // Получить рабочий лист, используя его индекс
+            Worksheet worksheet = collection[worksheetIndex];
             // Получить количество строк и столбцов
-            rows = worksheet.Cells.MaxDataRow;
-            cols = worksheet.Cells.MaxDataColumn;
-            NameTwo = worksheet.Cells[1, 3].StringValue;
+            int rows = worksheet.Cells.MaxDataRow;
+            int cols = worksheet.Cells.MaxDataColumn;
+            NameOne = worksheet.Cells[1, 3].StringValue;
+
+            
             // Цикл по строкам
             for (int i = 0; i < rows; i++)
             {
-                courseTwo.Add(worksheet.Cells[i, 2].DoubleValue);
+                courseTwo[i] = worksheet.Cells[i + 1, 2].DoubleValue;
+                datesChisla[i] = worksheet.Cells[i + 1, 0].DoubleValue;
+                dateTimes[i] = worksheet.Cells[i + 1, 1].DateTimeValue;
             }
-
+            NameTwo = worksheet.Cells[1, 3].StringValue;
         }
-
     }
 }
