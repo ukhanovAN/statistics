@@ -42,7 +42,10 @@ namespace gitt
             DataCourse course = new DataCourse();
             course.CoutTwo();
             WpfPlot1.Plot.Clear();
-            double[] x =
-
+            double[] x = course.dateTimes.Select(x => x.ToOADate()).ToArray();
+            WpfPlot1.Plot.AddScatter(x, course.courseTwo);
+            WpfPlot1.Plot.XAxis.DateTimeFormat(true);
+            WpfPlot1.Refresh();
+        }
     }
     }
