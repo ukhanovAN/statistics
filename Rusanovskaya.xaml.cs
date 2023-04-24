@@ -23,6 +23,11 @@ namespace gitt
         public Rusanovskaya()
         {
             InitializeComponent();
+            ClassOfSourceCourse classOfSourceCourse = new ClassOfSourceCourse();
+            List <ClassOfSourceCourse> list = new List<ClassOfSourceCourse>();
+            list = classOfSourceCourse.FillList();
+            dataGrid_Table.ItemsSource = list;
+
         }
         private void buttton_One_Click(object sender, RoutedEventArgs e)
         {

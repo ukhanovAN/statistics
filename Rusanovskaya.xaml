@@ -22,7 +22,7 @@
             <TextBlock x:Name="textBlock_date" Margin ="10" Height="25px" Background="#FFEEEEEE"></TextBlock>
         </StackPanel>
 
-        <DataGrid Grid.Column="2">
+        <DataGrid x:Name="dataGrid_Table" Grid.Column="2">
         </DataGrid>
 
     </Grid>
