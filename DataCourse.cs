@@ -27,6 +27,7 @@ namespace gitt
             int worksheetIndex = 0;
             // Получить рабочий лист, используя его индекс
             Worksheet worksheet = collection[worksheetIndex];
+            NameOne = worksheet.Name;
             // Получить количество строк и столбцов
             int rows = worksheet.Cells.MaxDataRow;
             NameOne = worksheet.Cells[1, 3].StringValue;
@@ -48,6 +49,7 @@ namespace gitt
             int worksheetIndex = 1;
             // Получить рабочий лист, используя его индекс
             Worksheet worksheet = collection[worksheetIndex];
+            NameTwo = worksheet.Name;
             // Получить количество строк и столбцов
             int rows = worksheet.Cells.MaxDataRow;
             NameOne = worksheet.Cells[1, 3].StringValue;

@@ -27,6 +27,7 @@ namespace gitt
             List <ClassOfSourceCourse> list = new List<ClassOfSourceCourse>();
             list = classOfSourceCourse.FillList();
             dataGrid_Table.ItemsSource = list;
+            dataGrid_Table.IsEnabled = false;
 
         }
         private void buttton_One_Click(object sender, RoutedEventArgs e)
@@ -39,8 +40,8 @@ namespace gitt
             WpfPlot1.Plot.AddScatter(x, course.courseOne);
             WpfPlot1.Plot.XAxis.DateTimeFormat(true);
             WpfPlot1.Refresh();
-
-            textBlock_one.Text = course.CoutMaxDiffOne();
+            textBlock_one.Text = course.NameOne + "\n";
+            textBlock_one.Text += course.CoutMaxDiffOne();
         }
 
         private void buttton_Two_Click(object sender, RoutedEventArgs e)
@@ -54,7 +55,8 @@ namespace gitt
             WpfPlot1.Plot.AddScatter(x, course.courseTwo);
             WpfPlot1.Plot.XAxis.DateTimeFormat(true);
             WpfPlot1.Refresh();
-            textBlock_two.Text = course.CoutMaxDiffTwo();
+            textBlock_two.Text = course.NameTwo + "\n";
+            textBlock_two.Text += course.CoutMaxDiffTwo();
         }
     }
     }

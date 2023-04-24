@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gitt"
         mc:Ignorable="d"
-        Title="Rusanovskaya" Height="450" Width="1400">
+        Title="Rusanovskaya" Height="450" Width="1400"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1.4*"></ColumnDefinition>
