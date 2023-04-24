@@ -102,7 +102,7 @@ namespace gitt {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/gitt;component/rusanovskaya.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/gitt;V1.0.0.0;component/rusanovskaya.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Rusanovskaya.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
