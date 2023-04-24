@@ -40,7 +40,7 @@ namespace gitt
             WpfPlot1.Plot.XAxis.DateTimeFormat(true);
             WpfPlot1.Refresh();
 
-            textBlock_date.Text = course.CoutMaxDiffOne();
+            textBlock_one.Text = course.CoutMaxDiffOne();
         }
 
         private void buttton_Two_Click(object sender, RoutedEventArgs e)
@@ -49,11 +49,12 @@ namespace gitt
             DataCourse course = new DataCourse();
             course.CoutTwo();
             WpfPlot1.Plot.Clear();
+
             double[] x = course.dateTimes.Select(x => x.ToOADate()).ToArray();
             WpfPlot1.Plot.AddScatter(x, course.courseTwo);
             WpfPlot1.Plot.XAxis.DateTimeFormat(true);
             WpfPlot1.Refresh();
-            textBlock_price.Text = course.CoutMaxDiffTwo();
+            textBlock_two.Text = course.CoutMaxDiffTwo();
         }
     }
     }

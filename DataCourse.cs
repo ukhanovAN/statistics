@@ -21,17 +21,14 @@ namespace gitt
         {
             // Загрузить файл Excel
             Workbook wb = new Workbook("Source\\course.xlsx");
-
             // Получить все рабочие листы
             WorksheetCollection collection = wb.Worksheets;
-
             // Индекс рабочего листа
             int worksheetIndex = 0;
             // Получить рабочий лист, используя его индекс
             Worksheet worksheet = collection[worksheetIndex];
             // Получить количество строк и столбцов
             int rows = worksheet.Cells.MaxDataRow;
-            int cols = worksheet.Cells.MaxDataColumn;
             NameOne = worksheet.Cells[1, 3].StringValue;
             // Цикл по строкам
             for (int i = 0; i < rows; i++)
@@ -45,7 +42,6 @@ namespace gitt
         {
             // Загрузить файл Excel
             Workbook wb = new Workbook("Source\\course.xlsx");
-
             // Получить все рабочие листы
             WorksheetCollection collection = wb.Worksheets;
             // Индекс рабочего листа
@@ -54,7 +50,6 @@ namespace gitt
             Worksheet worksheet = collection[worksheetIndex];
             // Получить количество строк и столбцов
             int rows = worksheet.Cells.MaxDataRow;
-            int cols = worksheet.Cells.MaxDataColumn;
             NameOne = worksheet.Cells[1, 3].StringValue;
 
             
@@ -70,39 +65,73 @@ namespace gitt
 
         public string CoutMaxDiffOne()
         {
-            double maxDiff = courseOne[0] - courseOne[1];
-            DateTime dateMaxDiff = dateTimes[0];
-            for (int i = 0; i < dateTimes.Length-1; i++)
+            double maxDiffN = 0;
+            DateTime dateMaxDiffN = dateTimes[0];
+            double maxDiffP = 0;
+            DateTime dateMaxDiffP = dateTimes[0];
+
+            if (courseOne[0] - courseOne[1] < 0)
             {
-                if (courseOne[i] - courseOne[i+1] > maxDiff)
-                {
-                    maxDiff = courseOne[i] - courseOne[i + 1];
-                    dateMaxDiff = dateTimes[i];
-                }
+                maxDiffN = courseOne[0] - courseOne[1];
+                dateMaxDiffN = dateTimes[0];
+            }
+            else
+            {
+                maxDiffP = courseOne[0] - courseOne[1];
+                dateMaxDiffP = dateTimes[0];
             }
 
-            if (maxDiff > 0 )
-                return "Валюта максимально потеряла " + Math.Round(maxDiff, 5) + " за " + dateMaxDiff.ToShortDateString();
-            else
-                return "Валюта максимально прибавила " + Math.Round(maxDiff, 5) + " за " + dateMaxDiff.ToShortDateString();
+            for (int i = 0; i < dateTimes.Length-1; i++)
+            {
+                if (courseOne[i] - courseOne[i+1] < 0 && Math.Abs(courseOne[i] - courseOne[i + 1]) > Math.Abs(maxDiffN))
+                {
+                    maxDiffN = courseOne[i] - courseOne[i + 1];
+                    dateMaxDiffN = dateTimes[i];
+                }
+                if (courseOne[i] - courseOne[i + 1] > 0 && Math.Abs(courseOne[i] - courseOne[i + 1]) > Math.Abs(maxDiffP))
+                {
+                    maxDiffP = courseOne[i] - courseOne[i + 1];
+                    dateMaxDiffP = dateTimes[i];
+                }
+            }
+            string text = "Максимальная прибавка за " + dateMaxDiffP.Date.ToShortDateString() + " число на " + Math.Round(maxDiffP, 5) +
+                "\n Потеря за " + dateMaxDiffN.Date.ToShortDateString() + " число на " + Math.Round(maxDiffN, 5);
+            return text;
         }
         public string CoutMaxDiffTwo()
         {
-            double maxDiff = courseTwo[0] - courseTwo[1];
-            DateTime dateMaxDiff = dateTimes[0];
-            for (int i = 0; i < dateTimes.Length - 1; i++)
+            double maxDiffN = 0;
+            DateTime dateMaxDiffN = dateTimes[0];
+            double maxDiffP = 0;
+            DateTime dateMaxDiffP = dateTimes[0];
+
+            if (courseTwo[0] - courseTwo[1] < 0)
             {
-                if (courseTwo[i] - courseTwo[i + 1] > maxDiff)
-                {
-                    maxDiff = courseTwo[i] - courseTwo[i + 1];
-                    dateMaxDiff = dateTimes[i];
-                }
+                maxDiffN = courseTwo[0] - courseTwo[1];
+                dateMaxDiffN = dateTimes[0];
+            }
+            else
+            {
+                maxDiffP = courseTwo[0] - courseTwo[1];
+                dateMaxDiffP = dateTimes[0];
             }
 
-            if (maxDiff > 0)
-                return "Валюта максимально потеряла " + Math.Round(maxDiff, 5) + " за " + dateMaxDiff.ToShortDateString();
-            else
-                return "Валюта максимально прибавила " + Math.Round(maxDiff, 5) + " за " + dateMaxDiff.ToShortDateString();
+            for (int i = 0; i < dateTimes.Length - 1; i++)
+            {
+                if (courseTwo[i] - courseTwo[i + 1] < 0 && Math.Abs(courseTwo[i] - courseTwo[i + 1]) > Math.Abs(maxDiffN))
+                {
+                    maxDiffN = courseTwo[i] - courseTwo[i + 1];
+                    dateMaxDiffN = dateTimes[i];
+                }
+                if (courseTwo[i] - courseTwo[i + 1] > 0 && Math.Abs(courseTwo[i] - courseTwo[i + 1]) > Math.Abs(maxDiffP))
+                {
+                    maxDiffP = courseTwo[i] - courseTwo[i + 1];
+                    dateMaxDiffP = dateTimes[i];
+                }
+            }
+            string text = "Максимальная прибавка за " + dateMaxDiffP.Date.ToShortDateString() + " число на " + Math.Round(maxDiffP, 5) +
+                "\n Потеря за " + dateMaxDiffN.Date.ToShortDateString() + " число на " + Math.Round(maxDiffN, 5);
+            return text;
         }
     }
 }
