@@ -54,7 +54,7 @@ namespace gitt {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/gitt;component/karkina.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/gitt;V1.0.0.0;component/karkina.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Karkina.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
