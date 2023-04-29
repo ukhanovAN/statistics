@@ -16,7 +16,7 @@
             <RowDefinition Height ="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Button x:Name="button_Rusanovskaya" Height="85" Width="150" Grid.Row="0" Click="button_Rusanovskaya_Click" >Русановская</Button>
-        <Button x:Name="button_Karkina" Height="85" Width="150" Grid.Row="1">Каркина</Button>
+        <Button x:Name="button_Karkina" Height="85" Width="150" Grid.Row="1" Click="button_Karkina_Click_1">Каркина</Button>
         <Button x:Name="button_Uhanova" Height="85" Width="150" Grid.Row="2">Уханова</Button>
     </Grid>
 </Window>
