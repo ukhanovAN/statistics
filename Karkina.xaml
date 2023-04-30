@@ -19,10 +19,8 @@
         <StackPanel Grid.Column="1" >
             <Button Margin ="10" Height="25px" x:Name="buttton_One" Click="buttton_One_Click" Background="#AAAAEEAA">Показать график медианной ЗП за 15 лет</Button>
             <Button Margin ="10" Height="25px" x:Name="buttton_Two" Click="buttton_Two_Click" Background="#AAAAEEAA">Вычислить процент роста ЗП у мужчин и женщин</Button>
-            <Label Margin ="10" >Процент роста зарплаты у мужчин:</Label>
+            <Label Margin ="10" >Процент роста зарплаты:</Label>
             <TextBlock x:Name="textBlock_one" Margin ="10" Height="50px" Background="#AAAAAAEE"></TextBlock>
-            <Label Margin ="10" >Процент роста зарплаты у женщин:</Label>
-            <TextBlock x:Name="textBlock_two" Margin ="10" Height="50px" Background="#AAAAAAEE"></TextBlock>
         </StackPanel>
 
         <DataGrid x:Name="dataGrid_Table" Grid.Column="2">

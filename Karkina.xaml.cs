@@ -43,8 +43,7 @@ namespace gitt
         private void buttton_Two_Click(object sender, RoutedEventArgs e)
         {
             DataSalary salary = new DataSalary();
-            textBlock_one.Text += "Тееекст";
-            textBlock_two.Text += "Текст";
+            textBlock_one.Text += salary.ShowPercent();
         }
     }
 }
