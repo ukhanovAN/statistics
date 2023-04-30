@@ -59,4 +59,4 @@ namespace gitt
             textBlock_two.Text += course.CoutMaxDiffTwo();
         }
     }
-    }
+}

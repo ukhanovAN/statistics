@@ -30,5 +30,11 @@ namespace gitt
             Rusanovskaya rusanovskaya = new Rusanovskaya();
             rusanovskaya.Show();
         }
+
+        private void button_Karkina_Click_1(object sender, RoutedEventArgs e)
+        {
+            Karkina karkina = new Karkina();
+            karkina.Show();
+        }
     }
 }

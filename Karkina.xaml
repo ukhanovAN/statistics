@@ -5,9 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gitt"
         mc:Ignorable="d"
-        Title="Karkina" Height="450" Width="800"
+        Title="Karkina" Height="450" Width="1400"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.4*"></ColumnDefinition>
+            <ColumnDefinition Width="0.8*"></ColumnDefinition>
+            <ColumnDefinition Width="0.8*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <WpfPlot Grid.Column="0" Name="WpfPlot1"/>
+
+        <StackPanel Grid.Column="1" >
+            <Button Margin ="10" Height="25px" x:Name="buttton_One" Click="buttton_One_Click" Background="#AAAAEEAA">Показать график медианной ЗП за 15 лет</Button>
+            <Button Margin ="10" Height="25px" x:Name="buttton_Two" Click="buttton_Two_Click" Background="#AAAAEEAA">Вычислить процент роста ЗП у мужчин и женщин</Button>
+            <Label Margin ="10" >Процент роста зарплаты:</Label>
+            <TextBlock x:Name="textBlock_one" Margin ="10" Height="50px" Background="#AAAAAAEE"></TextBlock>
+        </StackPanel>
+
+        <DataGrid x:Name="dataGrid_Table" Grid.Column="2">
+        </DataGrid>
     </Grid>
 </Window>
