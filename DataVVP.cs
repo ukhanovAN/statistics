@@ -65,7 +65,7 @@ namespace gitt
             string text = "";
             for (int i = 0; i < 15; i++)
             {
-                text += years[i].ToString() + ": " + Math.Round(percentVVP[i], 2).ToString() + "\n";
+                text += "  " + years[i].ToString() + ": " + Math.Round(percentVVP[i], 2).ToString() + "\n";
             }
             return text;
         }
@@ -80,7 +80,7 @@ namespace gitt
             string text = "";
             for (int i = 0; i < 15; i++)
             {
-                text += years[i].ToString() + ": " + Math.Round(percentVNP[i], 2).ToString() + "\n";
+                text += "  " + years[i].ToString() + ": " + Math.Round(percentVNP[i], 2).ToString() + "\n";
                 //text += years[i].ToString() + ": " + vnp[i].ToString() + "\n";
             }
             return text;
