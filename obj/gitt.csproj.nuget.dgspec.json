@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karku\\gitCanari\\statistics\\gitt.csproj": {}
+    "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\gitt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karku\\gitCanari\\statistics\\gitt.csproj": {
+    "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\gitt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karku\\gitCanari\\statistics\\gitt.csproj",
+        "projectUniqueName": "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\gitt.csproj",
         "projectName": "gitt",
-        "projectPath": "C:\\Users\\karku\\gitCanari\\statistics\\gitt.csproj",
-        "packagesPath": "C:\\Users\\karku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karku\\gitCanari\\statistics\\obj\\",
+        "projectPath": "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\gitt.csproj",
+        "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\karku\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Пользователь\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -36,5 +36,11 @@ namespace gitt
             Karkina karkina = new Karkina();
             karkina.Show();
         }
+
+        private void button_Uhanova_Click_1(object sender, RoutedEventArgs e)
+        {
+            Uhanova khan = new Uhanova();
+            khan.Show();
+        }
     }
 }
