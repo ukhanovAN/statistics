@@ -9,18 +9,18 @@
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="654*"></ColumnDefinition>
-            <ColumnDefinition Width="373*"></ColumnDefinition>
-            <ColumnDefinition Width="373*"></ColumnDefinition>
+            <ColumnDefinition Width="397*"></ColumnDefinition>
+            <ColumnDefinition Width="178*"></ColumnDefinition>
+            <ColumnDefinition Width="125*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <WpfPlot Grid.Column="0" Name="WpfPlot1"/>
+        <WpfPlot Grid.Column="0" Name="WpfPlot1" Margin="7,0,343,10" Grid.ColumnSpan="2"/>
 
-        <StackPanel Grid.ColumnSpan="2" Margin="653,0,0,0" >
-            <Button Margin ="10" Height="25px" x:Name="buttton_One" Click="buttton_One_Click" Background="#EDC1F5">ВВП</Button>
-            <Button Margin ="10" Height="25px" x:Name="buttton_Two" Click="buttton_Two_Click" Background="#EDC1F5">ВНП</Button>
-            <Label Content="Процент роста и падения:" />
-            <TextBlock x:Name="textBlock_one" Margin ="10" Height="260" Background="#E8D3E6"></TextBlock>
+        <StackPanel Margin="13,0,0,0" Grid.Column="1" >
+            <Button Margin ="10" Height="25px" x:Name="buttton_One" Click="buttton_One_Click" Background="#EDC1F5" Width="315">ВВП</Button>
+            <Button Margin ="10" Height="25px" x:Name="buttton_Two" Click="buttton_Two_Click" Background="#EDC1F5" Width="315">ВНП</Button>
+            <Label Content="Процент роста и падения:" Width="315" />
+            <TextBlock x:Name="textBlock_one" Margin ="10" Height="261" Background="#E8D3E6" Width="315"></TextBlock>
         </StackPanel>
 
         <DataGrid x:Name="dataGrid_Table" Grid.Column="2">
