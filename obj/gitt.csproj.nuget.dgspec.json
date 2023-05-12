@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\gitt.csproj": {}
+    "C:\\Users\\Пользователь\\TP\\lab_3\\statistic\\gitt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\gitt.csproj": {
+    "C:\\Users\\Пользователь\\TP\\lab_3\\statistic\\gitt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\gitt.csproj",
+        "projectUniqueName": "C:\\Users\\Пользователь\\TP\\lab_3\\statistic\\gitt.csproj",
         "projectName": "gitt",
-        "projectPath": "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\gitt.csproj",
+        "projectPath": "C:\\Users\\Пользователь\\TP\\lab_3\\statistic\\gitt.csproj",
         "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\obj\\",
+        "outputPath": "C:\\Users\\Пользователь\\TP\\lab_3\\statistic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Пользователь\\AppData\\Roaming\\NuGet\\NuGet.Config",

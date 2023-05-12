@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XQJuMTRShos/BMWnTvtOe3/gEOfvk6yxhgypeQ3L7mqWZ7PDZ/RoFa37m1I8qSgcyxDjNVDTGBkb6mn/UWew8w==",
+  "dgSpecHash": "3RZdku0+UU25oTlZTvZBLjgRtA3elu2x8UCWCZaYr3F+3m4qa42UIZpVWKmZYgfaSAlXi6EB5corJ5Nf8VsH3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Пользователь\\TP\\lab_3\\statistics\\gitt.csproj",
+  "projectFilePath": "C:\\Users\\Пользователь\\TP\\lab_3\\statistic\\gitt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Пользователь\\.nuget\\packages\\aspose.cells\\23.4.0\\aspose.cells.23.4.0.nupkg.sha512",
     "C:\\Users\\Пользователь\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
